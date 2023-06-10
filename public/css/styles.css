@@ -1,0 +1,149 @@
+* {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 125px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav li {
+    list-style-type: none;
+    margin-right: 1em;
+    font-size: 1.5em;
+    font-family: Arial;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0.5em;
+    left: 1em;
+    font-size: 0.5em;
+}
+
+h1 {
+    font-family: Arial;
+    text-align: center;
+    font-size: 2em;
+}
+
+.welcometext {
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+}
+
+p {
+    font-size: 1.5em;
+    font-family: Arial;
+    line-height: 2em;
+}
+
+.banner {
+    width: 100vw;
+    height: 500px;
+    background-image: url("/images/banner.jpg");
+    background-repeat: repeat-x;
+}
+
+.hours {
+    text-align: center;
+}
+
+.aboutPicsDiv {
+    width: 100%;
+}
+
+.aboutPic {
+    width: 33.3vw;
+    height: 450px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fruit {
+    height: 400px;
+}
+
+.dragonfruit p {
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+.dragonfruit-details p {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.aboutText {
+    font-size: 1em;
+    margin: 2em 1em;
+}
+
+@media screen and (max-width: 768px){
+    .products {
+        flex-wrap: wrap;
+    }
+    
+    .aboutPicsDiv {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .aboutPic {
+        width: 100vw;
+
+    }
+}
+
+@media screen and (max-width: 320px){
+    nav li {
+        margin-right: 1em;
+        font-size: 1em;
+    }
+
+    .hours {
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    .aboutPicsDiv {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .aboutPic {
+        width: 100vw;
+
+    }
+
+    .fruit {
+        display: block;
+        max-width: 320px;
+        width: auto;
+        height: auto;
+    }
+}

@@ -1,0 +1,17 @@
+extends layout 
+
+block layout-content 
+    h1 Our Dragonfruits
+    p.welcometext Check out all of our varieties of dragonfruit for sale!
+    .products 
+        each item in dragfruit
+            .dragonfruit
+                p #{item.species}
+                img.fruit(src=item.imgsrc) 
+                .dragonfruit-details 
+                    p Outside: #{item.outside}
+                    p Inside: #{item.inside}
+
+                    //-Image for Yellow Pitahya retrieved from: https://www.istockphoto.com/photo/whole-and-half-cut-fresh-dragon-yellow-shell-fruit-on-white-background-gm1198232204-342373016?utm_campaign=srp_photos_limitedresults&utm_content=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fdragonfruit%2F&utm_medium=affiliate&utm_source=pexels&utm_term=dragonfruit
+                    //-Image for Undatus retrieved from: https://www.istockphoto.com/photo/pitaya-or-dragon-fruit-gm1344251913-422652943?utm_campaign=srp_photos_limitedresults&utm_content=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fdragonfruit%2F&utm_medium=affiliate&utm_source=pexels&utm_term=dragonfruit
+                    //-Image for Red Pitaya retrieved from: https://www.istockphoto.com/photo/isolated-red-fleshed-dragon-fruit-gm1129173897-298192197?utm_campaign=srp_photos_limitedresults&utm_content=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fdragonfruit%2F&utm_medium=affiliate&utm_source=pexels&utm_term=dragonfruit
